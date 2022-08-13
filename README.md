@@ -1,8 +1,10 @@
-# NY Times News Android App
+About
+NY Times News Android App is a sample app that displays a list of New York Times news. The purpose of this project is to illustrate the usage of MVVM architecture design patterns that follow the best practices of Object Oriented Design Patterns using the following technology stack and dependencies.
 
-## Kotlin MVVM Architecture
-A sample app that display list of New York Times news. The purpose of this project to illustrate the usage of MVVM architecture design pattern that follow the best practices of Object Oriented Design Patterns using the following technology stack and dependencies.
+Features
+List of 20 news from the New York Times for the past 1, 7 and 30 days.
 
+Included
 1. Architecture Design Pattern
 2. MVVM
 2. Material Design
@@ -16,12 +18,25 @@ A sample app that display list of New York Times news. The purpose of this proje
 11. NYT News API
 12. JetPack Libraries
 
-## Requirements
+Requirements
 - Android Studio (version 4.2+)
 - Java SDK
 
-## Steps to build the app
-- Create your API key at [NY Times News API](https://developer.nytimes.com/docs/timeswire-product/1/overview)
-- Add the generated NY Times API key in `utils/Constants` like below  
-  `const val API_KEY: String = "IXcKbnUfK6YGeGdh53yRcpEwZG4mEugG"`
-- Build and run the app.
+How to Generate Coverage Report
+1. Added this to build.gradle
+android {
+    jacoco {
+        version = '0.7.9'
+    }
+}
+2. Run this command on gradle
+ ./gradlew createDebugCoverageReport
+3. Report will be generated at 
+/build/reports/
+ 
+
+Unit Testing on Android Studio
+1.	Select the unit testing file that is created.
+2.	You can either run the tests one by one or you can also run all the tests. 
+3.	It will also tell you that how many tests are passed.
+ 
