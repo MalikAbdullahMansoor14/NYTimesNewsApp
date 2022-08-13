@@ -1,4 +1,4 @@
-'#'**About**
+# **About**
 
 NY Times News Android App is a sample app that displays a list of New York Times news. The purpose of this project is to illustrate the usage of MVVM architecture design patterns that follow the best practices of Object Oriented Design Patterns using the following technology stack and dependencies.
 
