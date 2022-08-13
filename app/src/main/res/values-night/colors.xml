@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1976d2</color>
+    <color name="windowBackground">#000000</color>
+
+    <color name="textColor">@android:color/white</color>
+
+    <color name="toolbarBackground">#F1F1F1</color>
+    <color name="newsCard">#2C2B2B</color>
+
+</resources>

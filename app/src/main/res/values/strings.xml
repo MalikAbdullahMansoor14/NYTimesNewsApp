@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NY Times News</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="splash_title">NY Times\nNEWS APP</string>
+    <string name="save">Save</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="no_internet_details">Please connect with network to access news articles</string>
+    <string name="choose_period">Choose Period</string>
+    <string name="toolbar">NY Times Most Popular</string>
+</resources>
