@@ -1,6 +1,6 @@
 # **About**
 
-NY Times News Android App is a sample app that displays a list of 20 news. This app requires an api key that is available on New York Times developer console. User can select either 1 day, 7 or days old news. The purpose of this project is to illustrate the usage of MVVM architecture design patterns that follow the best practices of Object Oriented Design Patterns using the following technology stack and dependencies.
+NY Times News Android App is a sample app that displays a list of 20 news. This app requires an api key that is available on New York Times developer console. User can select either 1 day, 7 or 30 days old news. The purpose of this project is to illustrate the usage of MVVM architecture design patterns that follow the best practices of Object Oriented Design Patterns using the following technology stack and dependencies.
 
 # **Features**
 List of 20 news from the New York Times for the past 1, 7 and 30 days.
