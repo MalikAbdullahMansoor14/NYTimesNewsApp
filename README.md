@@ -33,6 +33,16 @@ List of 20 news from the New York Times for the past 1, 7 and 30 days.
 </p>
 
 
+# **How to install the project and run app and test cases**
+
+Simply clone or download the project from github link.
+Open project in Android Studio, wait for building and syncing sdk, install if anything missing and prompted.
+After successful building the project, click on the play button on top and wait for the application to install on simulator or device.
+To check the Junit test cases, right click on com.example.programmingtest (test) folder and choose 'Run tests with coverage'.
+With coverage option will also show the coverage of the test cases in project.
+
+![image](https://user-images.githubusercontent.com/81286986/184523580-08343f58-bd02-49ee-a7c3-46b156dbe6ce.png)
+
 
 # **How to Generate Coverage Report**
 1. Added this to build.gradle
@@ -49,12 +59,5 @@ android {
 ![image](https://user-images.githubusercontent.com/81286986/184523570-142b3da0-377f-4727-abeb-8f26ef34182e.png)
 
  
-
-# **Unit Testing on Android Studio**
-1.	Select the unit testing file that is created.
-2.	You can either run the tests one by one or you can also run all the tests. 
-3.	It will also tell you that how many tests are passed.
-
-![image](https://user-images.githubusercontent.com/81286986/184523580-08343f58-bd02-49ee-a7c3-46b156dbe6ce.png)
 
  
