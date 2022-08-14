@@ -5,7 +5,12 @@ NY Times News Android App is a sample app that displays a list of 20 news. This 
 # **Features**
 List of 20 news from the New York Times for the past 1, 7 and 30 days.
 
-# **Included**
+
+# **App Architecture**
+Based on MVVM architecture and repository pattern
+
+
+# **App Includes**
 1. Architecture Design Pattern
 2. MVVM
 2. Material Design
