@@ -23,6 +23,13 @@ List of 20 news from the New York Times for the past 1, 7 and 30 days.
 - Android Studio (version 4.2+)
 - Java SDK
 
+
+# **Screenshots**
+
+![detail](https://user-images.githubusercontent.com/81286986/184523681-73f4398e-71b8-4192-a431-55ba8996f0fa.jpeg)
+![detail](https://user-images.githubusercontent.com/81286986/184523687-9557ba1d-e4c2-468a-bffc-de0bb6cd6b0a.jpeg)
+
+
 # **How to Generate Coverage Report**
 1. Added this to build.gradle
 android {
