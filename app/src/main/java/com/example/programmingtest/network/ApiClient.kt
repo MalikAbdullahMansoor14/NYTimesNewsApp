@@ -1,5 +1,11 @@
 package com.example.programmingtest.network
 
+/**
+ * @author Abdullah Mansoor
+ * @Date 8/12/22
+ *
+ * client class for making http call using retrofit
+ */
 
 import com.example.programmingtest.utils.Constants
 import okhttp3.OkHttpClient
@@ -8,6 +14,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
 object ApiClient {
+
+
+
 
     fun getInstance(): Retrofit {
 
@@ -29,7 +38,8 @@ object ApiClient {
         return retrofit
     }
 
-    /* creating service */
+    // creating service
+
     val retrofitService: NewsApiService by lazy {
         getInstance().create(NewsApiService::class.java)
     }

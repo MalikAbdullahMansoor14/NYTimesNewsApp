@@ -1,5 +1,14 @@
 package com.example.programmingtest.ui.adapters
 
+/**
+ * @author Abdullah Mansoor
+ * @Date 8/12/22
+ *
+ * adapter class for mapping data in layout
+
+ */
+
+
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -17,7 +26,7 @@ class NewsAdapter(
     val onClick: (News) -> Unit
 ) : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
 
-    // Differ
+
     private val differCallback = object : DiffUtil.ItemCallback<News>() {
         override fun areItemsTheSame(oldItem: News, newItem: News): Boolean = oldItem == newItem
 
@@ -51,6 +60,8 @@ class NewsAdapter(
     override fun getItemCount(): Int {
         return differ.currentList.size
     }
+
+    // This inner class is mapping recycler view with view holder with layout file
 
     inner class NewsViewHolder(itemView: RvNewsBinding) : RecyclerView.ViewHolder(itemView.root)
 

@@ -1,5 +1,10 @@
 package com.example.programmingtest.model
 
+/**
+ * @author Abdullah Mansoor
+ * @Date 8/13/22
+ */
+
 import java.io.Serializable
 import com.google.gson.annotations.SerializedName
 

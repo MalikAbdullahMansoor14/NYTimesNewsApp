@@ -1,5 +1,12 @@
 package com.example.programmingtest.ui
 
+/**
+ * @author Abdullah Mansoor
+ * @Date 8/12/22
+ *
+ * This is the view class interacting with viewmodel
+ */
+
 import android.app.AlertDialog
 import android.content.Context
 import android.content.Intent
@@ -49,21 +56,25 @@ class MainActivity : AppCompatActivity() {
         initObserver()
     }
 
+
+    // Requesting data for news based on period of day
     private fun loadNews(period: Int) {
         selectedPeriod = period
         viewModel.getMostPopularNewsByPeriod(period)
     }
-
+    // Setting the name of the title
     private fun setupToolbar() {
         supportActionBar?.title = getString(R.string.toolbar)
     }
 
+    // This method will show the swiper when the api is getting response from the server
     private fun onSwipeListener() {
         binding.refreshing.setOnRefreshListener {
             loadNews(selectedPeriod)
         }
     }
 
+    // Data observer for news data response using LiveData Observer
     private fun initObserver() {
         viewModel.mostPopularNewsListLiveData.observe(this) {
             it ?: return@observe
@@ -89,11 +100,13 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_home, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
+    // This method is for click on the menubar icon on the toolbar
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.periodFilter -> {
@@ -103,6 +116,7 @@ class MainActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
+    // This method will show a dialog of the menu from where user can select any time period
     private fun showPeriodFilterDialog() {
         val alertDialog = AlertDialog.Builder(this@MainActivity)
         alertDialog.setTitle(getString(R.string.choose_period))
@@ -127,6 +141,7 @@ class MainActivity : AppCompatActivity() {
         alert.show()
     }
 
+   // Setting list of news articles into News adapter class
     private fun setupNewsAdatper(data: List<News>) {
         var adapter = NewsAdapter(this) {
             startActivity(NewsDetailsActivity.newIntent(this@MainActivity, it))
@@ -135,6 +150,7 @@ class MainActivity : AppCompatActivity() {
         binding.rvNewsList.adapter = adapter
     }
 
+  // This dialog will appear if there is no internet connection
     private fun noInternetDialog() {
         val alertDialog = AlertDialog.Builder(this)
         alertDialog.apply {
@@ -149,6 +165,7 @@ class MainActivity : AppCompatActivity() {
         alertDialog.show()
     }
 
+   // This method is checking the internet connection on the device
     @SuppressWarnings
     fun checkInternet(): Boolean {
         val connectivityManager =

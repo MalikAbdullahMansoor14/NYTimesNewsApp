@@ -1,4 +1,11 @@
 package com.example.programmingtest.ui.splash
+/**
+ * @author Abdullah Mansoor
+ * @Date 8/13/22
+ *
+ * This is the launcher activity where user can see the logo of the app
+ */
+
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

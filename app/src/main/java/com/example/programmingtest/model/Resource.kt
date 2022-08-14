@@ -2,8 +2,11 @@ package com.example.programmingtest.model
 
 /**
  * @author Abdullah Mansoor
- * @Date 8/13/22
+ * @Date 8/12/22
+ *
+ * This class controls the data response to manage different states with UI using sealed class
  */
+
 sealed class Resource<T>(
     val data: T? = null,
     val message: String? = null

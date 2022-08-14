@@ -1,5 +1,13 @@
 package com.example.programmingtest.ui.newsdetails
 
+/**
+ * @author Abdullah Mansoor
+ * @Date 8/13/22
+ *
+ * This is the detail activity where user can see the news details
+ */
+
+
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle

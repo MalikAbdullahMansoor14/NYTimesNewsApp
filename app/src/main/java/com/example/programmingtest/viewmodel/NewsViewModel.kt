@@ -1,4 +1,11 @@
 package com.example.programmingtest.viewmodel
+/**
+ * @author Abdullah Mansoor
+ * @Date 8/12/22
+ *
+ * This viewmodel class implement presentation and business logic for news response
+ */
+
 
 import androidx.lifecycle.*
 import com.example.programmingtest.model.NewsResponse
@@ -26,6 +33,8 @@ class NewsViewModel(
         mostPopularNewsListLiveData = _mostPopularNewsList
     }
 
+
+    // calling repository for most popular news data by period with android Coroutine
     fun getMostPopularNewsByPeriod(period: Int) {
         viewModelScope.launch(Dispatchers.IO) {
             try {
