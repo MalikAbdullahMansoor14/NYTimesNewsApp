@@ -26,9 +26,9 @@ List of 20 news from the New York Times for the past 1, 7 and 30 days.
 
 # **Screenshots**
 
-<img src="https://user-images.githubusercontent.com/81286986/184523792-e97a1f11-9b0f-4710-920e-91c144d075cc.jpeg" width="350" height="350" />
+<img src="https://user-images.githubusercontent.com/81286986/184523792-e97a1f11-9b0f-4710-920e-91c144d075cc.jpeg" width="250" height="350" />
 
-<img src="https://user-images.githubusercontent.com/81286986/184523681-73f4398e-71b8-4192-a431-55ba8996f0fa.jpeg" width="350" height="350" />
+<img src="https://user-images.githubusercontent.com/81286986/184523681-73f4398e-71b8-4192-a431-55ba8996f0fa.jpeg" width="250" height="350" />
 
 
 # **How to Generate Coverage Report**
