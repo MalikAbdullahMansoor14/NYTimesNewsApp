@@ -45,6 +45,7 @@ android {
  ./gradlew createDebugCoverageReport
 3. Report will be generated at 
 /build/reports/
+
 ![image](https://user-images.githubusercontent.com/81286986/184523570-142b3da0-377f-4727-abeb-8f26ef34182e.png)
 
  
@@ -53,6 +54,7 @@ android {
 1.	Select the unit testing file that is created.
 2.	You can either run the tests one by one or you can also run all the tests. 
 3.	It will also tell you that how many tests are passed.
+
 ![image](https://user-images.githubusercontent.com/81286986/184523580-08343f58-bd02-49ee-a7c3-46b156dbe6ce.png)
 
  
